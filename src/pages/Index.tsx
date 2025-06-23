@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -144,23 +143,37 @@ const Index = () => {
       </section>
 
       {/* Technologies Section */}
-      <section className="py-16 px-6 bg-gray-50">
+      <section className="py-16 px-6 bg-gray-50 overflow-hidden">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Technologies & Tools</h2>
             <p className="text-gray-600">Trusted by clients and collaborators at DevLabs, Preply, and more.</p>
           </div>
           
-          <div className="flex flex-wrap justify-center gap-3">
-            {technologies.map((tech, index) => (
-              <Badge 
-                key={index} 
-                variant="secondary" 
-                className="px-4 py-2 text-sm bg-white border border-gray-200 hover:bg-gray-50 transition-colors"
-              >
-                {tech}
-              </Badge>
-            ))}
+          {/* Animated scrolling container */}
+          <div className="relative">
+            <div className="flex space-x-4 animate-scroll">
+              {/* First set of technologies */}
+              {technologies.map((tech, index) => (
+                <Badge 
+                  key={`first-${index}`} 
+                  variant="secondary" 
+                  className="px-6 py-3 text-sm bg-white border border-gray-200 hover:bg-gray-50 transition-colors whitespace-nowrap flex-shrink-0"
+                >
+                  {tech}
+                </Badge>
+              ))}
+              {/* Duplicate set for seamless loop */}
+              {technologies.map((tech, index) => (
+                <Badge 
+                  key={`second-${index}`} 
+                  variant="secondary" 
+                  className="px-6 py-3 text-sm bg-white border border-gray-200 hover:bg-gray-50 transition-colors whitespace-nowrap flex-shrink-0"
+                >
+                  {tech}
+                </Badge>
+              ))}
+            </div>
           </div>
         </div>
       </section>
