@@ -62,37 +62,32 @@ const Index = () => {
       description: "Mentored 50+ students in Java, Python, and web development"
     },
     {
-      role: "Full Stack Developer",
-      company: "Freelance",
-      period: "2023 – 2024", 
-      description: "Developed custom web solutions for various clients"
+      role: "Engineering Student",
+      company: "Govt. Engineering College Bikaner",
+      period: "2019 – 2023", 
+      description: "Study various engineering related subjects"
     },
-    {
-      role: "Software Engineering Intern",
-      company: "TechCorp",
-      period: "2022 – 2023", 
-      description: "Contributed to large-scale applications using modern frameworks"
-    }
   ];
 
   const services = [
     {
-      title: "Web Development",
-      description: "Building responsive and scalable web applications"
+      title: "Full Stack Web Development",
+      description: "End-to-end development using React, Next.js, Spring Boot, and Node.js. I create responsive UIs and scalable backend APIs with clean, maintainable code."
     },
     {
-      title: "Backend Development",
-      description: "Creating robust APIs and microservices architecture"
+      title: "Cloud & DevOps Engineering",
+      description: "Deploying production-grade applications with Docker, GitHub Actions, Terraform, and AWS (EC2, S3, RDS). Automating workflows and ensuring CI/CD best practices."
     },
     {
-      title: "UI/UX Implementation",
-      description: "Translating designs into interactive user experiences"
+      title: "AI-Powered Solutions",
+      description: "Building intelligent applications by integrating machine learning models like GPT-2 using Hugging Face and Flask. Focused on real-world automation and smart user experiences."
     },
     {
-      title: "Code Mentoring",
-      description: "Teaching programming concepts and best practices"
+      title: "Technical Mentorship",
+      description: "Guiding learners in Java, Web Development, and Full Stack Engineering. Personalized 1:1 mentorship, debugging help, and structured growth plans for aspiring developers."
     }
   ];
+  
 
   return (
     <div className="min-h-screen bg-white text-gray-900">
@@ -219,10 +214,9 @@ const Index = () => {
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12">
             <div className="space-y-6">
-              <h2 className="text-4xl font-bold">A Comprehensive look<br />at what we offer and<br />how we deliver</h2>
+              <h2 className="text-4xl font-bold">Services I Offer as a <br />Full Stack Developer</h2>
               <p className="text-gray-600">
-                Specializing in full-stack development with a focus on scalable 
-                architectures and clean, maintainable code.
+              Combining frontend finesse, backend reliability, and deployment expertise <br />to deliver end-to-end web solutions that scale.
               </p>
             </div>
             
@@ -230,9 +224,14 @@ const Index = () => {
               {services.map((service, index) => (
                 <Card 
                   key={index} 
-                  className="group hover:bg-black hover:text-white transition-all duration-300 cursor-pointer hover:scale-105 bg-white border-0 shadow-sm"
+                  className="group relative overflow-hidden bg- hover:bg-black hover:text-white transition-all duration-300 cursor-pointer hover:scale-105 bg-white border-0 shadow-sm rounded-xl"
                 >
-                  <CardContent className="p-6">
+                 <div className="h-[2px] w-8 bg-gray-300 group-hover:bg-white mt-5 ml-5"></div>
+                  
+                 <div className="absolute top-0 right-0 w-16 h-16 bg-white opacity-10 rounded-bl-full pointer-events-none z-0"></div>
+                 <div className="absolute top-2 right-2 w-20 h-20 bg-white opacity-10 rounded-bl-full pointer-events-none z-0"></div>
+
+                  <CardContent className="p-5">
                     <h3 className="font-bold mb-2 group-hover:text-white">{service.title}</h3>
                     <p className="text-sm text-gray-600 group-hover:text-gray-300">{service.description}</p>
                   </CardContent>
