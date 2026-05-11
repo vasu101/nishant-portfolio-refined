@@ -16,44 +16,71 @@ const Index = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const technologies = [
-    "Java", "Spring Boot", "JavaScript", "Next.js", "React", "Node.js", 
-    "Python", "Flask", "Docker", "AWS", "Kafka", "PostgreSQL"
-  ];
-
+ const technologies = [
+  "Java",
+  "Spring Boot",
+  "Micronaut",
+  "AWS Lambda",
+  "AWS S3",
+  "Apache Kafka",
+  "PostgreSQL",
+  "Redis",
+  "Spring Security",
+  "REST APIs",
+  "Microservices",
+  "Distributed Systems",
+  "Workflow Engines",
+  "Docker",
+  "Next.js",
+  "GitHub Actions",
+  "SQL",
+  "JavaScript"
+];
   const projects = [
-    {
-      title: "Admin Dashboard",
-      tech: "React • Node.js • JWT",
-      description: "Secure admin panel with full CRUD operations and authenticated APIs",
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d"
-    },
-    {
-      title: "Skin Care App",
-      tech: "Java Swing • MVC",
-      description: "Desktop application with tax billing and inventory management",
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6"
-    },
-    {
-      title: "Text Completion App",
-      tech: "Flask • GPT-2 • Docker",
-      description: "AI-powered text completion with containerized deployment",
-      image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7"
-    },
-    {
-      title: "E-commerce Platform",
-      tech: "React • Spring Boot",
-      description: "Full-stack e-commerce solution with payment integration",
-      image: "https://images.unsplash.com/photo-1518770660439-4636190af475"
-    }
-  ];
+  {
+    title: "Vendor Onboarding Platform",
+    tech: "Java • Micronaut • REST APIs",
+    description:
+      "Stateful vendor onboarding workflow system with multi-stage approval pipelines, dynamic state transitions, and auditable onboarding workflows.",
+    image: "https://images.unsplash.com/photo-1551434678-e076c223a692"
+  },
+  {
+    title: "WorkLedger",
+    tech: "Java • Spring Boot • PostgreSQL",
+    description:
+      "Backend work tracking system managing task lifecycle, employee effort tracking, and audit-ready activity records.",
+    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40"
+  },
+  {
+    title: "Workflow Execution Engine",
+    tech: "Java • Distributed Systems • DAG Processing",
+    description:
+      "Designed a DAG-based workflow orchestration engine supporting dynamic task execution, dependency resolution, retries, and concurrency control.",
+    image: "https://images.unsplash.com/photo-1515879218367-8466d910aaa4"
+  },
+  {
+    title: "Training Management System",
+    tech: "Java • PostgreSQL • Backend Architecture",
+    description:
+      "Built a scalable learning platform supporting assessments, program hierarchies, learner tracking, and cohort analytics.",
+    image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
+  }
+];
 
   const experience = [
     {
-      role: "Associate Software Developer",
-      company: "DevLabs",
-      period: "2025 – Now",
-      description: "Building scalable web applications with microservices architecture"
+    role: "Software Engineer",
+    company: "Sarvika Technologies",
+    period: "Aug 2025 – Present",
+    description:
+      "Building Java-based serverless backend systems, workflow orchestration engines, and scalable PostgreSQL-powered APIs handling high-volume enterprise workloads."
+    },
+    {
+    role: "Associate Software Developer",
+    company: "DevLabs Technology",
+    period: "Jan 2025 – Jul 2025",
+    description:
+      "Developed Spring Boot backend services, REST APIs, and modular business workflow systems for enterprise applications."
     },
     {
       role: "Programming Instructor",
@@ -70,41 +97,47 @@ const Index = () => {
   ];
 
   const services = [
-    {
-      title: "Full Stack Web Development",
-      description: "End-to-end development using React, Next.js, Spring Boot, and Node.js. I create responsive UIs and scalable backend APIs with clean, maintainable code."
-    },
-    {
-      title: "Cloud & DevOps Engineering",
-      description: "Deploying production-grade applications with Docker, GitHub Actions, Terraform, and AWS (EC2, S3, RDS). Automating workflows and ensuring CI/CD best practices."
-    },
-    {
-      title: "AI-Powered Solutions",
-      description: "Building intelligent applications by integrating machine learning models like GPT-2 using Hugging Face and Flask. Focused on real-world automation and smart user experiences."
-    },
-    {
-      title: "Technical Mentorship",
-      description: "Guiding learners in Java, Web Development, and Full Stack Engineering. Personalized 1:1 mentorship, debugging help, and structured growth plans for aspiring developers."
-    }
-  ];
+  {
+    title: "Backend System Engineering",
+    description:
+      "Designing scalable Java backend systems using Spring Boot, Micronaut, and distributed service architectures."
+  },
+  {
+    title: "Workflow Orchestration Platforms",
+    description:
+      "Building DAG-based execution systems with dependency resolution, retries, concurrency handling, and runtime task orchestration."
+  },
+  {
+    title: "Cloud & Serverless Architecture",
+    description:
+      "Developing AWS Lambda-powered microservices and scalable cloud-native backend infrastructure."
+  },
+  {
+    title: "Database Performance Optimization",
+    description:
+      "Optimizing PostgreSQL queries, schema design, and backend data pipelines for low-latency enterprise applications."
+  }
+];
   
 
   return (
-    <div className="min-h-screen bg-white text-gray-900">
+    <div className="min-h-screen bg-[#F7F7F7] text-gray-900">
       {/* Navigation */}
       <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrollY > 50 ? 'bg-white/80 backdrop-blur-md border-b border-gray-100' : 'bg-transparent'}`}>
         <div className="max-w-6xl mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
-            <div className="font-bold text-xl">Nishant</div>
+            <div className="font-bold text-xl">NISHANT</div>
             
             {/* Desktop Menu */}
             <div className="hidden md:flex items-center space-x-8">
-              <a href="#about" className="hover:text-gray-600 transition-colors">About Us</a>
+              <a href="#about" className="hover:text-gray-600 transition-colors">About</a>
               <a href="#portfolio" className="hover:text-gray-600 transition-colors">Portfolio</a>
               <a href="#experience" className="hover:text-gray-600 transition-colors">Experience</a>
-              <Button variant="outline" className="rounded-full px-6">
-                Contact
+              <a href="#contact">
+              <Button className="bg-black hover:bg-gray-800 text-white px-8 py-3">
+                HIRE ME!
               </Button>
+              </a>
             </div>
 
             {/* Mobile Menu Button */}
@@ -120,7 +153,7 @@ const Index = () => {
           {isMenuOpen && (
             <div className="md:hidden mt-4 pb-4 border-t border-gray-100">
               <div className="flex flex-col space-y-4 pt-4">
-                <a href="#about" onClick={() => setIsMenuOpen(false)}>About Us</a>
+                <a href="#about" onClick={() => setIsMenuOpen(false)}>About</a>
                 <a href="#portfolio" onClick={() => setIsMenuOpen(false)}>Portfolio</a>
                 <a href="#experience" onClick={() => setIsMenuOpen(false)}>Experience</a>
                 <a href="#contact" onClick={() => setIsMenuOpen(false)}>Contact</a>
@@ -130,30 +163,59 @@ const Index = () => {
         </div>
       </nav>
 
-      {/* Hero Section */}
-      <section id="home" className="pt-32 pb-20 px-6">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-8">
-              <h1 className="text-6xl lg:text-7xl font-bold leading-tight">
-                Software<br />Developer
-              </h1>
-            </div>
+      <div className="min-h-screen flex items-center justify-center p-6">
+    {/* Hero */}
+    <section className="grid lg:grid-cols-2 items-center px-10 lg:px-20 py-16 lg:py-24 gap-16">
 
-            <div className="flex justify-center">
-              <div className="w-80 h-80 bg-gradient-to-br from-gray-100 to-gray-200 rounded-full flex items-center justify-center">
-                <div className="w-64 h-64 bg-white rounded-full shadow-lg flex items-center justify-center">
-                  <img 
-                    src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=400&fit=crop&crop=face" 
-                    alt="Nishant Singh Shekhawat"
-                    className="w-56 h-56 rounded-full object-cover"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
+      {/* Left Side */}
+      <div>
+
+        <p className="uppercase tracking-[0.3em] text-sm text-gray-500 mb-6">
+          Backend Engineer
+        </p>
+
+        <h1 className="text-5xl lg:text-7xl font-bold leading-[0.95] tracking-tight">
+          Building scalable backend systems.
+        </h1>
+
+        <p className="mt-8 text-lg text-gray-600 leading-relaxed max-w-xl">
+          Specialized in distributed systems, workflow orchestration,
+          cloud-native APIs, and scalable backend infrastructure using
+          Java, Spring Boot, Micronaut, AWS, Kafka, and PostgreSQL.
+        </p>
+
+        {/* CTA */}
+        <div className="mt-10">
+          <a href="#portfolio">
+            <Button className="bg-black hover:bg-gray-800 text-white px-8 py-3">
+                View My Projects
+              </Button>
+          </a>
         </div>
-      </section>
+      </div>
+
+      {/* Right Side */}
+      <div className="flex justify-center">
+
+        <div className="relative">
+
+          <div className="w-[320px] h-[320px] lg:w-[420px] lg:h-[420px] bg-gray-100 rounded-[40px] border-4 border-black overflow-hidden shadow-[8px_8px_0px_#000]">
+
+            <img
+              src="/1000028419.jpg"
+              alt="Backend Engineer Illustration"
+              className="w-full h-full object-cover"
+            />
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+</div>
 
       {/* Technologies Carousel */}
       <section className="py-8 px-6 overflow-hidden">
@@ -173,44 +235,71 @@ const Index = () => {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 px-6">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
-              <div className="w-full h-80 bg-gray-100 rounded-lg flex items-center justify-center">
-                <img 
-                  src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&h=400&fit=crop" 
-                  alt="About me"
-                  className="w-full h-full object-cover rounded-lg"
-                />
-              </div>
-            </div>
-            
-            <div className="space-y-6">
-              <h2 className="text-4xl font-bold">About Me</h2>
-              <p className="text-lg text-gray-700 leading-relaxed">
-                Hi, I'm <span className="font-semibold">Nishant</span> — passionate about crafting reliable software, 
-                mentoring learners, and delivering scalable solutions.
-              </p>
-              <p className="text-gray-600">
-                Building digital experiences that are scalable, secure, and smart. With experience 
-                at DevLabs and teaching at Preply, I combine technical expertise with clear communication.
-              </p>
-              <div className="flex flex-wrap gap-3">
-                <Button className="bg-black hover:bg-gray-800 text-white px-8 py-3">
-                  View My Work
-                </Button>
-                <Button variant="outline" className="px-8 py-3">
-                  Download Resume
-                </Button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* About Section */}
+<section id="about" className="py-32 px-6">
+
+  <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-20 items-center">
+
+    {/* Typography Side */}
+    <div className="relative h-[350px] flex items-center justify-center overflow-hidden">
+
+      {/* Giant Background Letter */}
+      <h1 className="absolute text-[320px] font-black text-black/5 leading-none select-none">
+        HI!
+      </h1>
+
+      {/* Foreground Title */}
+      <div className="relative z-10">
+        <h2 className="text-6xl md:text-7xl font-bold tracking-tight">
+          ABOUT
+          <br />
+          ME
+        </h2>
+      </div>
+
+    </div>
+
+    {/* Content Side */}
+    <div>
+
+      <p className="text-2xl leading-relaxed text-gray-800">
+        I'm Nishant — a backend engineer focused on building scalable
+        distributed systems, workflow orchestration platforms,
+        and high-performance API infrastructures.
+      </p>
+
+      <p className="mt-8 text-lg text-gray-600 leading-relaxed">
+        I specialize in Java backend engineering using Spring Boot,
+        Micronaut, AWS Lambda, Kafka, Redis, and PostgreSQL.
+        My work revolves around building production-grade systems,
+        optimizing backend performance, and designing reliable
+        service architectures.
+      </p>
+
+      <div className="flex gap-4 mt-10">
+        <a
+          href="#portfolio"
+          className="bg-black text-white px-8 py-4 text-sm font-semibold uppercase tracking-wide rounded-full"
+        >
+          View Projects
+        </a>
+
+        <a
+          href="/resume.pdf"
+          className="border border-black px-8 py-4 text-sm font-semibold uppercase tracking-wide rounded-full"
+        >
+          Resume
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 
       {/* Services Section */}
-      <section className="py-20 px-6 bg-gray-50">
+      <section className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12">
             <div className="space-y-6">
@@ -246,7 +335,7 @@ const Index = () => {
       <section id="experience" className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="mb-12">
-            <h2 className="text-4xl font-bold mb-4">A Yearly snapshot of my<br />creative growth</h2>
+            <h2 className="text-4xl font-bold mb-4">Professional Experience</h2>
           </div>
 
           <div className="space-y-6">
@@ -267,37 +356,82 @@ const Index = () => {
       </section>
 
       {/* Portfolio Section */}
-      <section id="portfolio" className="py-20 px-6 bg-gray-50">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">Explore my portfolio of<br />creative solutions</h2>
+      {/* Portfolio Section */}
+<section id="portfolio" className="py-32 px-6">
+
+  <div className="max-w-6xl mx-auto">
+
+    {/* Section Header */}
+    <div className="relative mb-24">
+
+      <h1 className="absolute text-[220px] font-black text-black/5 leading-none -top-20 select-none">
+        P
+      </h1>
+
+      <div className="relative z-10">
+        <p className="uppercase tracking-[0.3em] text-sm text-gray-500 mb-4">
+          Selected Work
+        </p>
+
+        <h2 className="text-5xl md:text-6xl font-bold tracking-tight">
+          Portfolio
+        </h2>
+      </div>
+
+    </div>
+
+    {/* Project Grid */}
+    <div className="grid md:grid-cols-2 gap-8">
+
+      {projects.map((project, index) => (
+
+        <div
+          key={index}
+          className="border border-gray-200 rounded-[32px] p-10 hover:-translate-y-1 transition-all duration-300 bg-white"
+        >
+
+          {/* Number */}
+          <p className="text-sm text-gray-400 mb-6">
+            0{index + 1}
+          </p>
+
+          {/* Title */}
+          <h3 className="text-3xl font-bold tracking-tight mb-4">
+            {project.title}
+          </h3>
+
+          {/* Tech */}
+          <p className="text-sm uppercase tracking-wide text-gray-500 mb-6">
+            {project.tech}
+          </p>
+
+          {/* Description */}
+          <p className="text-gray-600 leading-relaxed">
+            {project.description}
+          </p>
+
+          {/* Links */}
+          <div className="flex gap-6 mt-10 text-sm font-semibold uppercase tracking-wide">
+
+            <a href="#">
+              Github
+            </a>
+
+            <a href="#">
+              Live
+            </a>
+
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6">
-            {projects.map((project, index) => (
-              <div
-                key={index}
-                className="relative group aspect-square rounded-lg overflow-hidden cursor-pointer"
-                onMouseEnter={() => setHoveredProject(index)}
-                onMouseLeave={() => setHoveredProject(null)}
-              >
-                <img 
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                />
-                <div className={`absolute inset-0 bg-black/60 transition-opacity duration-300 ${hoveredProject === index ? 'opacity-100' : 'opacity-0'}`}>
-                  <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                    <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-                    <p className="text-sm text-gray-300 mb-2">{project.tech}</p>
-                    <p className="text-sm">{project.description}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
         </div>
-      </section>
+
+      ))}
+
+    </div>
+
+  </div>
+
+</section>
 
       {/* Testimonial Section */}
       <section className="py-20 px-6">
@@ -319,13 +453,13 @@ const Index = () => {
               </h2>
               
               <div className="flex justify-start space-x-6 pt-8">
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                <a href="https://github.com/vasu101" className="text-gray-400 hover:text-white transition-colors">
                   <Github size={24} />
                 </a>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                <a href="https://www.linkedin.com/in/nshekhawat/" className="text-gray-400 hover:text-white transition-colors">
                   <Linkedin size={24} />
                 </a>
-                <a href="mailto:nishant@example.com" className="text-gray-400 hover:text-white transition-colors">
+                <a href="mailto:nishantshekhawat@gmail.com" className="text-gray-400 hover:text-white transition-colors">
                   <Mail size={24} />
                 </a>
               </div>
