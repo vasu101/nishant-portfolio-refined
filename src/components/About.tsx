@@ -50,7 +50,7 @@ const About = () => {
             </a>
 
             <a
-              href="/resume.pdf"
+              href="/Nishant_Singh_SDE.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >

@@ -12,7 +12,7 @@ export const projects = [
     tech: "Java · Micronaut · REST APIs",
     description:
       "Stateful vendor onboarding workflow with multi-stage approval pipelines, dynamic state transitions, and full audit trails for enterprise compliance.",
-    github: "https://github.com/vasu101",
+    github: "https://github.com/vasu101/onboarding-platform",
     live: null,
   },
   {
@@ -20,23 +20,7 @@ export const projects = [
     tech: "Java · Spring Boot · PostgreSQL",
     description:
       "Backend work-tracking system managing task lifecycles, employee effort logging, and audit-ready activity records across distributed teams.",
-    github: "https://github.com/vasu101",
-    live: null,
-  },
-  {
-    title: "Workflow Execution Engine",
-    tech: "Java · Distributed Systems · DAG Processing",
-    description:
-      "DAG-based orchestration engine with dynamic task execution, dependency resolution, configurable retries, and fine-grained concurrency control.",
-    github: "https://github.com/vasu101",
-    live: null,
-  },
-  {
-    title: "Training Management System",
-    tech: "Java · PostgreSQL · Backend Architecture",
-    description:
-      "Scalable learning platform supporting assessments, program hierarchies, learner tracking, and cohort-level analytics for enterprise teams.",
-    github: "https://github.com/vasu101",
+    github: "https://github.com/vasu101/workledger-backend",
     live: null,
   },
 ];
