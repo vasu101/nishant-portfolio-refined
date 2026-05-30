@@ -71,7 +71,7 @@ export const experience = [
       "Mentored 50+ students in Java, Python, and web development — simplifying complex backend concepts through structured, hands-on curriculum.",
   },
   {
-    role: "B.E. Computer Science",
+    role: "B.Tech. Computer Science",
     company: "Govt. Engineering College Bikaner",
     period: "2019 – 2023",
     description:
